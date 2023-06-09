@@ -1,0 +1,461 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* header */
+
+header {
+    padding: 26px 0;
+    background: #0A0A0A;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-center-logo {
+    flex-basis: 13%;
+}
+
+.header__nav-left_items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
+
+.header__nav-left-link {
+    transition: 0.3s color ease-in-out;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #717171;
+}
+
+.header__nav-left-link:hover {
+    color: #490E84;
+}
+
+.header__nav-left-link:active {
+    color: #490E84;
+    text-decoration: underline;
+}
+
+.header__nav-right-link {
+    transition: 0.3s color ease-in-out;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #717171;
+    text-decoration: none;
+}
+
+.header__nav-right-link:hover {
+    color: #490E84;
+}
+
+.header__nav-right-link:active {
+    color: #490E84;
+    text-decoration: underline;
+}
+
+/* iphones view */ 
+
+.iphone-view {
+    background: #F5F5F7;
+    margin-bottom: 87px;
+}
+
+.iphone-view__container {
+    padding-top: 71px;
+    text-align: center;
+}
+
+.iphone-view__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: #490E84;
+    margin-bottom: 40px;
+}
+
+.iphone-view__button {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.iphone-view__button button {
+    transition: 0.3s box-shadow ease-in-out;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #490E84;
+    border-radius: 30px;
+    padding: 16px 117px 19px 119px;
+    text-transform: uppercase;
+}
+
+.iphone-view__button button:active {
+    border-color: #c5c1c1;
+    box-shadow: 10px -10px 15px #c5c1c1;
+}
+
+/* about */
+
+.about {
+    margin-bottom: 130px;
+}
+
+.about__title {
+    margin: 0;
+    padding-bottom: 35px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #717171;
+    text-transform: uppercase;
+}
+
+.about__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__main_text {
+    flex-basis: 45%;
+}
+
+.about__main_image {
+    flex-basis: 38%;
+}
+
+.about__main_text1 {
+    padding-bottom: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0A0A0A;
+}
+
+.about__main_text2 {
+    padding-bottom: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0A0A0A;
+}
+
+.about__main_text3 {
+    padding-bottom: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0A0A0A;
+}
+
+.about__main_text4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #0A0A0A;
+}
+
+/* color */
+
+.color {
+    margin-bottom: 150px;
+}
+
+.color__title {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #717171;
+}
+
+.color__items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.color__item-title {
+    padding: 0;
+    margin: 0;
+    padding-top: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #0A0A0A;
+    text-align: center;
+}
+
+.color__item-text {
+    padding: 0;
+    margin: 0;
+    padding-top: 7px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0A0A0A;
+    text-align: center;
+}
+
+/* order */ 
+
+.order__container {
+    display: flex;
+    width: 100%;
+    background-color: #574B63;
+}
+
+.order__main {
+    width: 50%;
+    height: 100%;
+}
+
+.order__image {
+    width: 50%;
+}
+
+.order__image img {
+    height: 100%;
+}
+
+.order__title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 137px;
+    padding-bottom: 72px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.order__form {
+    width: 100%;
+    padding: 0 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order__form-input {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #F5F5F5;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #fff;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.order__form-input:focus {
+    outline: none;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.order__form-input-tel {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #F5F5F5;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #fff;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.order__form-input-tel:focus {
+    outline: none;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.order__form-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    opacity: 0.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.order__form-button {
+    transition: 0.3s box-shadow ease-in-out;
+    padding: 16px 81px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #490E84;
+    background: #FFFFFF;
+    border-radius: 30px;
+    margin-bottom: 130px;
+}
+
+
+.order__form-button:active {
+    border-color: #c5c1c1;
+    box-shadow: 5px -10px 15px #c5c1c1;
+}
+
+.order__form-input:hover {
+    border: 1px solid #c5c1c1;
+}
+
+.order__form-input-tel:hover {
+    border: 1px solid #c5c1c1;
+}
+
+
+/* footer */
+
+.footer {
+    margin: 0;
+    padding: 0;
+    background: #0A0A0A;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__main-logotipe {
+    transition: 0.3s color ease-in-out;
+    padding: 54px 0px 54px 20px;
+}
+
+.footer__main-link-number {
+    transition: 0.3s color ease-in-out;
+    padding: 66px 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #717171;
+    text-decoration: none;
+}
+
+.footer__main-link {
+    transition: 0.3s color ease-in-out;
+    padding: 66px 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #717171;
+    text-decoration: none;
+}
+
+.footer__main-link:hover {
+    color: #490E84;
+}
+
+.footer__main-link:active {
+    color: #490E84;
+    text-decoration: underline;
+}
+
+.footer__main-logotipe:hover {
+    color: #490E84;
+}
+
+.footer__main-logotipe:active {
+    color: #490E84;
+    text-decoration: underline;
+}
+
+.footer__main-link-number:hover {
+    color: #490E84;
+}
+
+.footer__main-link-number:active {
+    color: #490E84;
+    text-decoration: underline;
+}
